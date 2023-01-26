@@ -26,16 +26,22 @@ const blogs = [
 ]
 
 /*** DOM ***/
-// console.log(document)
+
+
+console.log(document.links)
 
 /*** Finding HTML Elements ***/
 //Select element by ID.
-// const $main = document.getElementById('')
-// console.log( $main )
+const $main = document.getElementById('main')
+console.log( $main )
+
 
 //Select element by any CSS selector
-//console.log( $canadaCategory  )
-//console.log( $categories )
+const $canadaCategory = document.querySelector('nav a:nth-child(2)')
+console.log( $canadaCategory  )
+
+const $categories = document.querySelectorAll('nav a')
+console.log( $categories )
 //practice CSS selectors
 // console.log(document.querySelectorAll('nav a:not(nav a:last-child)'))
 
