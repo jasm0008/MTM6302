@@ -91,28 +91,40 @@ console.log(element.getAttribute('target')); // null
 
 
 /*** Manipulating classes ***/
-// console.log(element.classList)      // ["p-4 p-md-5 mb-4 rounded position-relative"]
+console.log( $jumbotron.classList)      // ["p-4 p-md-5 mb-4 rounded position-relative"]
 // Add class 'text-bg-dark' o the element with id jumbotron
-// console.log(element.classList)      // ["p-4 p-md-5 mb-4 rounded position-relative text-bg-dark"]
+$jumbotron.classList.add('text-bg-dark')
+console.log(element.classList)      // ["p-4 p-md-5 mb-4 rounded position-relative text-bg-dark"]
 
 // Remove class
+$jumbotron.classList.remove('text-bg-dark')
 // console.log(element.classList)      // ["p-4 p-md-5 mb-4 rounded position-relative"]
 
-// Toggle class
-//obtain the 'dark mode' button, and save it to $darkModeBtn const
+// // Toggle class
+// //obtain the 'dark mode' button, and save it to $darkModeBtn const
+// const $darkModeBtn = document.getElementById('darkModeBtn')
 // $darkModeBtn.addEventListener('click', function() {
-//     toggle class here
+//     //toggle class here
+//     $jumbotron.classList.toggle('text-bg-dark')
+
+
 // })
 
 //contains() and boolean condition
-// console.log(element.classList.contains('position-relative')) // ?
-// console.log(element.classList.contains('text-bg-dark'))      // ?
-// const i = 5;
-// const condition = i > 0;
-// element.classList.toggle('text-bg-dark', condition) //Toggle class
-// console.log(element.classList) // ?
+console.log(element.classList.contains('position-relative')) // true
+console.log(element.classList.contains('text-bg-dark'))      // false
+const i = 0;
+const condition = i > 0;
+element.classList.toggle('text-bg-dark', condition) //Toggle class
+console.log($jumbotron.classList) // ?
 
+const $links = document.querySelectorAll('nav a')
 
+console.log( $links.textContent = categories[3])
 
+const $title = document.getElementById('title')
+$title.textContent = blogs[0].title
+
+console.log( $main.innerHTML )
 
 
