@@ -1,4 +1,29 @@
 //create the blog data
+const contegories = [
+ 'World',
+ 'Candada', 
+ 'Technology', 
+ 'Design'
+]
+
+// this is an array
+const blogs = [
+    {
+        category: 'World',
+        title: 'Featured post',
+        date: 'Nov 12',
+        description: 'This is a wider card with supporting text below as a natural lead-in to additional content.',
+        link: '#'
+    },
+
+    {
+        category: 'Design',
+        title: 'Post title',
+        date: 'Nov 11',
+        description: 'This is a wider card with supporting text below as a natural lead-in to additional content.',
+        link: '#'
+    }
+]
 
 /*** DOM ***/
 // console.log(document)
